@@ -16,6 +16,7 @@ object biblioteca {
 object muñeco {
   var peso = 1000
   method peso() = peso
+  method peso(unPeso){peso=unPeso}
   method color() = celeste
   method material() = vidrio  
 }
@@ -23,7 +24,9 @@ object placaDeCobre {
   var peso = 1000
   var color = rojo
   method peso() = peso 
+  method peso(unPeso){peso=unPeso}
   method color() = color
+  method color(unColor){color=unColor}
   method material() = vidrio 
 }
 
@@ -31,14 +34,14 @@ object rojo {
   method esFuerte() = true 
 }
 object verde {
-  method esfuerte() = true 
+  method esFuerte() = true 
 }
 object celeste {
-  method esfuerte() = false
+  method esFuerte() = false
 }
 
 object pardo {
-  method esfuerte() = false
+  method esFuerte() = false
 }
 
 object cobre {

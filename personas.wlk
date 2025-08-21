@@ -4,7 +4,7 @@ object rosa {
   method leGusta(unObjeto) = unObjeto.peso()<=2000 //metodo-nombre(argumento)
 }
 object estefania {
- method leGusta(unObjeto) = unObjeto.color().esfuerte()  
+ method leGusta(unObjeto) = unObjeto.color().esFuerte()  
 }
 object luisa {
   method leGusta(unObjeto) = unObjeto.material().esBrillante() 
