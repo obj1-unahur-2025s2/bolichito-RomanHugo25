@@ -12,7 +12,6 @@ object luisa {
 
 object juan {
   method leGusta(unObjeto) = (
-    unObjeto.peso()<=1800 and
-    unObjeto.peso()<=1800 or
+    unObjeto.peso().between(1200, 1800) or  //unObjeto.peso()>=1200 and unObjeto.peso()<=1800 or
     !unObjeto.material().esBrillante())
 }
