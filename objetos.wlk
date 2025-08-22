@@ -44,6 +44,10 @@ object pardo {
   method esFuerte() = false
 }
 
+object naranja{
+  method esFuerte() = true 
+}
+
 object cobre {
   method esBrillante() = true 
 }
@@ -58,4 +62,30 @@ object lino {
 }
 object cuero {
   method esBrillante() = false 
+}
+
+//Objetos extras
+
+object arito {
+  method peso() = 180
+  method color() = celeste
+  method material() = cobre  
+}
+
+object banquito {
+  var color = naranja
+  method peso() = 1700
+  method color() = color
+  method color(unColor) {color=unColor}
+  method material() = madera  
+}
+
+object cajita {
+  var objetoAdentro = arito
+
+  method objetoAdentro() = objetoAdentro
+  method objetoAdentro(unObjeto) { objetoAdentro = unObjeto  } 
+  method peso() = 400 + objetoAdentro.peso()
+  method color() = rojo
+  method material() = cobre  
 }
